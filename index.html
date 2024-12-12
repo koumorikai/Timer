@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Таймер и Секундомер</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Таймер и Секундомер</h1>
+    
+    <div class="mode-switch">
+      <a href="#" id="timer-mode" class="mode-link active">Таймер</a>
+      <a href="#" id="stopwatch-mode" class="mode-link">Секундомер</a>
+    </div>
+    
+    <div id="timer-settings" class="settings">
+      <label for="time-input">Настройте время (в секундах):</label>
+      <input type="number" id="time-input" value="60" min="1" step="1">
+    </div>
+    
+    <div id="stopwatch-settings" class="settings">
+      <p>Секундомер не требует настройки времени.</p>
+    </div>
+
+    <div class="time-display">
+      <span id="time-display">01:00</span>
+    </div>
+    
+    <div class="controls">
+      <button id="start-btn" class="btn">Старт</button>
+      <button id="reset-btn" class="btn">Сброс</button>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
